@@ -1,13 +1,14 @@
 import React from 'react'
 import { Route, Link } from 'react-router-dom'
 import HamburgerMenu from './HamburgerMenu'
+import './header.css'
 
 const Header = () => {
     return(
         <header>
+            <h1 className='visually-hidden'>Header Nav</h1>
             <nav>
-                <h1>Header Nav</h1>
-                <ol>
+                <ol className='header-nav-ul'>
                     <li><a href='#'>Model S</a></li>
                     <li><a href='#'>Model 3</a></li>
                     <li><a href='#'>Model X</a></li>
@@ -16,7 +17,7 @@ const Header = () => {
                     <li><a href='#'>Roadster</a></li>
                     <li><a href='#'>Energy</a></li>
                     <li>
-                        <ol>
+                        <ol className='header-nav-ul'>
                             <li><a href='#'>Shop</a></li>
                             <li><a href='#'>Sign In</a></li>
                         </ol>

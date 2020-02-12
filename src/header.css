@@ -1,0 +1,22 @@
+ul > li > a {
+    list-style: none;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.header-nav-ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.header-nav-ul > li {
+    margin-right: 1em;
+    text-transform: uppercase;
+}
+
+.header-nav-ul > li > a {
+    text-decoration: none;
+}
