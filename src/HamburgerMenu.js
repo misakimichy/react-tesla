@@ -3,9 +3,9 @@ import { Route, Link } from 'react-router-dom'
 
 const HamburgerMenu = () => {
     return (
-        <nav>
-            <h1>Hamburger Menu</h1>
-            <ol>
+        <nav className='hamburger-menu'>
+            <h1 className='visually-hidden'>Hamburger Menu</h1>
+            <ol className='header-nav-ul'>
                 <li><a href='#'>Existing Inventory</a></li>
                 <li><a href='#'>Used Inventory</a></li>
                 <li><a href='#'>Insureance</a></li>

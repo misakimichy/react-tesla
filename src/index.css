@@ -1,5 +1,6 @@
 :root {
-  --font-black: #393c41;
+  --font-darkGray: #393c41;
+  --font-lightGray: #cecece;
 }
 
 body {
@@ -54,6 +55,32 @@ header {
   text-decoration: none;
 }
 
+/* Hamburger menu */
+.hamburger-menu {
+  float: right;
+  height: 100vh;
+  min-width: 300px;
+  max-width: 300px;
+  background-color: white;
+  padding: 20px;
+}
+
+.hamburger-menu > .header-nav-ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburger-menu > .header-nav-ul > li{ 
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--font-lightGray);
+  margin-bottom: 30px;
+}
+.hamburger-menu > .header-nav-ul > li > a {
+  color: var(--font-black);
+}
+
+
+/* Footer design */
 footer {
   height: 8vh;
   background-color: white;
