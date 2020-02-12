@@ -1,3 +1,7 @@
+# React - Tesla Mock Website
+
+#### _Last Update: 02/12/2020_
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
