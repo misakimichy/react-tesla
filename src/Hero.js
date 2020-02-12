@@ -1,5 +1,4 @@
 import React from 'react'
-import './hero.css'
 import { Route } from 'react-router-dom'
 
 const Hero = () => {

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Route, Link } from 'react-router-dom'
 import HamburgerMenu from './HamburgerMenu'
-import './header.css'
 
 const Header = () => {
     return(

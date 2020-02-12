@@ -1,13 +1,75 @@
+:root {
+  --font-black: #393c41;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family:'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://www.tesla.com/tesla_theme/assets/img/supercharger/supercharger_hero.jpg");
+  font-size: 14px;
+}
+
+a {
+  letter-spacing: 0.7px;
+  font-weight: 500;
+  color: white;
+}
+
+ul > li > a {
+  list-style: none;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+header {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.header-nav-ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.header-nav-ul > li {
+  margin-right: 1em;
+  text-transform: uppercase;
+}
+
+.header-nav-ul > li > a {
+  text-decoration: none;
+}
+
+footer {
+  height: 8vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer nav > .header-nav-ul > li {
+  text-transform: none;
+}
+
+
+footer nav > .header-nav-ul > li > a {
+  color: var(--font-black);
+  letter-spacing: 0;
+  font-weight: 400;
+  font-size: 13px;
 }

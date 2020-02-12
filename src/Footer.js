@@ -5,8 +5,8 @@ const Footer = () => {
     return(
         <footer>
             <nav>
-                <h1>Footer nav</h1>
-                <ol>
+                <h1 className='visually-hidden'>Footer nav</h1>
+                <ol className='header-nav-ul'>
                     <li><a href='#'>Misaki Koonce © 2020</a></li>
                     <li><a href='#'>Privacy & Legal</a></li>
                     <li><a href='#'>Contact</a></li>
