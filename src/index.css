@@ -29,6 +29,7 @@ code {
     monospace;
 }
 
+/* Header */
 header {
   height: 5vh;
   display: flex;
@@ -56,29 +57,104 @@ header {
 }
 
 /* Hamburger menu */
-.hamburger-menu {
-  float: right;
-  height: 100vh;
+.hamburger-menu-container {
+  min-width: 300px;
+  max-width: 300px;
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+}
+
+.hamburger-menu-container > .header-nav-ul {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  clear: both;
+  padding: 30px;
+  position: fixed;
+  right: -150%;
+  transition: right .1s ease-out;
+}
+
+.hamburger-menu-container > .header-nav-ul > li { 
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid var(--font-lightGray);
+}
+.hamburger-menu-container > .header-nav-ul > li > a {
+  color: var(--font-black);
+  display: block;
+}
+
+
+/* hamburger icon */
+.hamburger-menu-container .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  padding: 20px;
+  position: relative;
+  user-select: none;
+  margin-right: 10px;
+}
+
+.hamburger-menu-container .menu-icon .navicon {
+  background-color: var(--font-darkGray);
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background .1s ease-out;
+}
+
+.hamburger-menu-container .menu-icon .navicon:before,
+.hamburger-menu-container .menu-icon .navicon:after {
+  background-color: var(--font-darkGray);
+  content: '';
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  transition: all 0.1 ease-out;
+}
+
+.hamburger-menu-container .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.hamburger-menu-container .menu-icon .navicon:after {
+  top: -5px;
+}
+
+ /* hamburger menu btn */
+.hamburger-menu-container .menu-btn {
+  display: none;
+}
+
+.hamburger-menu-container .menu-btn:checked ~ .header-nav-ul{
   min-width: 300px;
   max-width: 300px;
   background-color: white;
-  padding: 20px;
+  right: 0;
 }
 
-.hamburger-menu > .header-nav-ul {
-  display: flex;
-  flex-direction: column;
+.hamburger-menu-container .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
 }
 
-.hamburger-menu > .header-nav-ul > li{ 
-  padding-bottom: 30px;
-  border-bottom: 1px solid var(--font-lightGray);
-  margin-bottom: 30px;
-}
-.hamburger-menu > .header-nav-ul > li > a {
-  color: var(--font-black);
+.hamburger-menu-container .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+  top: 0px;
 }
 
+.hamburger-menu-container .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+  top: 0px;
+}
+
+.hamburger-menu-container .menu-btn:checked ~ .menu-icon:not(.steps) .navcon:before, 
+.hamburger-menu-container .menu-btn:checked ~ .menu-icon:not(.steps) .navcona:after {
+  top: 0;
+} 
 
 /* Footer design */
 footer {
@@ -87,6 +163,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  position:absolute;
+  left:0;
+  bottom:0;
+  right:0;
 }
 
 footer nav > .header-nav-ul > li {

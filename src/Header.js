@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Link } from 'react-router-dom'
-import HamburgerMenu from './HamburgerMenu'
+import HamburgerMenu from './HamburgerMenu';
 
 const Header = () => {
     return(
@@ -19,6 +19,7 @@ const Header = () => {
                         <ol className='header-nav-ul'>
                             <li><a href='#'>Shop</a></li>
                             <li><a href='#'>Sign In</a></li>
+                            <li><HamburgerMenu /></li>
                         </ol>
                     </li>
                 </ol>

@@ -1,10 +1,13 @@
 import React from 'react'
 import { Route, Link } from 'react-router-dom'
+import Region from './Region'
 
 const HamburgerMenu = () => {
     return (
-        <nav className='hamburger-menu'>
+        <nav className='hamburger-menu-container'>
             <h1 className='visually-hidden'>Hamburger Menu</h1>
+            <input className='menu-btn' type='checkbox' id='menu-btn' />
+            <label className='menu-icon' for='menu-btn'><span className='navicon'></span></label>
             <ol className='header-nav-ul'>
                 <li><a href='#'>Existing Inventory</a></li>
                 <li><a href='#'>Used Inventory</a></li>
@@ -19,6 +22,7 @@ const HamburgerMenu = () => {
                 <li><a href='#'>Carbon Impact</a></li>
                 <li><a href='#'>Shop</a></li>
                 <li><a href='#'>🇺🇸United States</a></li>
+                <Region />
             </ol>
         </nav>
     )

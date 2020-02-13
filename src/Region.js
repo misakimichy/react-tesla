@@ -2,7 +2,7 @@ import React from 'react'
 
 const Region = () => {
     return (
-        <div>
+        <div className='visually-hidden'>
             <header><h1>Select Your Region</h1></header>
             <main>
                 <div>
