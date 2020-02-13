@@ -16,7 +16,7 @@ const Header = () => {
                     <li><a href='#'>Roadster</a></li>
                     <li><a href='#'>Energy</a></li>
                     <li>
-                        <ol className='header-nav-ul'>
+                        <ol className='header-nav-ul right-nav-ul'>
                             <li><a href='#'>Shop</a></li>
                             <li><a href='#'>Sign In</a></li>
                             <li><HamburgerMenu /></li>

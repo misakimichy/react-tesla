@@ -56,6 +56,10 @@ header {
   text-decoration: none;
 }
 
+.header-nav-ul .right-nav-ul {
+  margin-left: 50px;
+}
+
 /* Hamburger menu */
 .hamburger-menu-container {
   min-width: 300px;
@@ -73,7 +77,7 @@ header {
   padding: 30px;
   position: fixed;
   right: -150%;
-  transition: right .1s ease-out;
+  transition: right .2s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .hamburger-menu-container > .header-nav-ul > li { 
@@ -89,12 +93,12 @@ header {
 
 /* hamburger icon */
 .hamburger-menu-container .menu-icon {
-  cursor: pointer;
   display: inline-block;
   padding: 20px;
-  position: relative;
   user-select: none;
-  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+  top: -30px;
 }
 
 .hamburger-menu-container .menu-icon .navicon {
@@ -103,7 +107,6 @@ header {
   height: 2px;
   width: 18px;
   position: relative;
-  transition: background .1s ease-out;
 }
 
 .hamburger-menu-container .menu-icon .navicon:before,
@@ -114,7 +117,7 @@ header {
   width: 100%;
   display: block;
   position: absolute;
-  transition: all 0.1 ease-out;
+  transition: all .2s ease-out;
 }
 
 .hamburger-menu-container .menu-icon .navicon:before {
